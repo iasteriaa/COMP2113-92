@@ -1,6 +1,6 @@
 # **COMP2113-92**
 ## **Group-92**
-### **Gong Chuanqi**
+### **Gong Chuanqi 3033092216**
 ### **Liu Yilin 3035770783**
 ## Game Description & Rules: 
 #### **Snake**
