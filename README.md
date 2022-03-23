@@ -2,7 +2,7 @@
 ## **Group-92**
 ### **Gong Chuanqi**
 ### **Liu Yilin**
-## **Game Description & Rules: **
+## Game Description & Rules: 
 #### **Snake**
 #### Players use the arrow keys to control a snake to swallow beans, while the snake body with the swallowed beans continue to grow. When the snake head hit the snake body or the barrier, the game is over. When the length of the snake is less than 1, the game is over. The initial length is 5. 
 #### Rules
