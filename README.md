@@ -27,28 +27,31 @@
 
 #### “+”: Bomb. 
 ## **Features:**
-#### **Direction** 
+#### 1.**Direction** 
 
 #### Use case & “if” to read the input and change the direction. 
 
-#### **The length of the snake**
+#### 2.**The length of the snake**
 
 #### “void" & “for” loop to print the snake. 
 
-#### **Print food and bomb**
+#### 3. **Print food and bomb**
 
 #### “void” & “while”, “while” loop to determine if the location of the food and the snake is the same, if so, do not print 	food/bomb. 
 
 #### “random” to print food or bomb on the map. 
 
-#### **End game**
+#### 4. **End game**
 
 #### “void” & “if” , three cases: hit the barrier/ hit itself/ the length is less than 1. 
 
-#### **Remake**
+#### 5.**Remake**
 
 #### “bool” or “if”, to read the input and determine whether to remake. If not, jump to the page of score. 
 ## Features implemented
-#### Print the
+#### Print the snake: use a deque to store the snake body
+#### Initialize the map
+#### Put the food
+#### Put the bomb
 ## No non-standard C/C++ libraries required
 ## Compilation and execution instructions
