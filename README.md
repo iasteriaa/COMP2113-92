@@ -48,6 +48,7 @@
 #### **Remake**
 
 #### “bool” or “if”, to read the input and determine whether to remake. If not, jump to the page of score. 
-#### A list of features that you have implemented, and explain how each coding element 1 to 5 listed under the coding requirements aforementioned support your features.
-#### A list of non-standard C/C++ libraries, if any, that are used in your work and integrated to your code repo. Please also indicate what features in your game are supported by these libraries.
-#### Compilation and execution instructions. Simply put, this serves like a "Quick start" of your game.
+## Features implemented
+#### Print the
+## No non-standard C/C++ libraries required
+## Compilation and execution instructions
