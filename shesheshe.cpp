@@ -14,7 +14,7 @@ void clearScreen(){ //clean the screen, prepare for the game
 	printf("\033[2J");
 }
 
-struct Snake { 
+struct Snake { // build the struct of the snake
     char image;
     short x, y; 
 };
@@ -102,7 +102,6 @@ class snakeGame {
         }
 		
     }
-    deque<Snake> snake1;
     private:
     enum MapSize {height = 20,width = 80}; //the gsize of map is 20*80
     char direction_Snake; //direction
@@ -118,7 +117,7 @@ void snakeGame::foodEaten() { // Determine whether the snake eats food, if yes, 
     eatFood=true;
     ++score;
 }
-void snakeGame::touchBomb(){
+void snakeGame::touchBomb(){ // When the bomb is touched
     createBomb();
     touchbomb=true;
 }
@@ -130,7 +129,7 @@ void snakeGame::judgeCrash() { // Determine whether the game is over
         for (; iter != snake.end(); ++iter) {
             if (iter->y == y && iter->x == x  ) flag=1;
         }}
-    if (snake.size()<1)
+    if (snake.size()<1)// If the length of the snake is smaller than 1, game is over
     flag =1;
     if (flag || snake.front().y == 1 || snake.front().y == width+1 || snake.front().x == 1 || snake.front().x == height+1 )// When the snake hits the wall, game over
     {
@@ -138,7 +137,7 @@ void snakeGame::judgeCrash() { // Determine whether the game is over
         cout << "Game Over! Score: " << score << " Press 'p' to remake"<<endl;
         while(1) {
             direction_Snake = getch();
-            if (direction_Snake == 'p')// after game over, if press "p", remake
+            if (direction_Snake == 'p')// after the game is over, if press "p", remake
             {clearScreen();
             snakeGame();}
             } 
@@ -147,7 +146,7 @@ void snakeGame::judgeCrash() { // Determine whether the game is over
     
 }
 
-void snakeGame::printSnake() { // print the snake with @ and +
+void snakeGame::printSnake() { // print the snake with @ and +, initial snake should looks like "@+++"
     deque<Snake>::const_iterator iter = snake.begin();
     for (; iter <= snake.begin() + 1 && iter < snake.end(); ++iter) {
         gotoxy(iter->x, iter->y); cout << iter->image;
@@ -214,13 +213,13 @@ snakeGame::snakeGame() { //Start the game
 		tmp2=snake.back(); 
 		tmp1=snake.front();
 		snake.pop_back();
-		if (eatFood) {
+		if (eatFood) {// when food is eaten, the length of the snake will add 1
 			tmp2.image='+'; 
 			snake.push_back(tmp2);
 			eatFood=false;
 		}else 		 
 			clearSnake(tmp2);
-		if (touchbomb){
+		if (touchbomb){ // when bomb is touched, the length of the snake will reduce 2
             deque<Snake>::iterator itr=snake.end();
         tmp2=*(itr-1);
             snake.pop_back();
