@@ -51,7 +51,14 @@
 ## Features implemented
 #### Print the snake: use a deque to store the snake body
 #### Initialize the map
-#### Put the food
-#### Put the bomb
+#### Create the food
+#### Create the bomb
+#### judgeCrash to check whether the game is over
+#### foodEaten to deal with the situation that food is eated, length +1, score +1
+#### touchBomb to deal with the situation that bomb is touched by the snake, length-2
+#### Input_user to get command of the users
+#### when the game end, print "Game Over! Score:" and score gained
 ## No non-standard C/C++ libraries required
 ## Compilation and execution instructions
+#### g++ shesheshe.cpp -o a
+#### ./a
